@@ -1,0 +1,204 @@
+{
+  "unit": "no_than",
+  "name_vi": "Nỏ Thần",
+  "frame_size": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    57
+  ],
+  "facing": "right (lật ngang để quay trái)",
+  "levels": {
+    "1": {
+      "name_vi": "Nỏ Cổ Loa",
+      "idle": {
+        "file": "sprites/tower_lv1_idle.png",
+        "frames": 4,
+        "durations_ms": [
+          180,
+          180,
+          180,
+          180
+        ],
+        "loop": true
+      },
+      "attack": {
+        "file": "sprites/tower_lv1_attack.png",
+        "frames": 6,
+        "durations_ms": [
+          120,
+          140,
+          60,
+          80,
+          120,
+          120
+        ],
+        "loop": false,
+        "fire_frame": 2,
+        "projectile_spawn": [
+          20,
+          -28
+        ],
+        "projectile_count": 1
+      },
+      "projectile": "arrow"
+    },
+    "2": {
+      "name_vi": "Nỏ Đồng",
+      "idle": {
+        "file": "sprites/tower_lv2_idle.png",
+        "frames": 4,
+        "durations_ms": [
+          180,
+          180,
+          180,
+          180
+        ],
+        "loop": true
+      },
+      "attack": {
+        "file": "sprites/tower_lv2_attack.png",
+        "frames": 6,
+        "durations_ms": [
+          120,
+          140,
+          60,
+          80,
+          120,
+          120
+        ],
+        "loop": false,
+        "fire_frame": 2,
+        "projectile_spawn": [
+          20,
+          -30
+        ],
+        "projectile_count": 1
+      },
+      "projectile": "arrow"
+    },
+    "3": {
+      "name_vi": "Nỏ Thần Liên Châu",
+      "idle": {
+        "file": "sprites/tower_lv3_idle.png",
+        "frames": 4,
+        "durations_ms": [
+          180,
+          180,
+          180,
+          180
+        ],
+        "loop": true
+      },
+      "attack": {
+        "file": "sprites/tower_lv3_attack.png",
+        "frames": 6,
+        "durations_ms": [
+          120,
+          140,
+          60,
+          80,
+          120,
+          120
+        ],
+        "loop": false,
+        "fire_frame": 2,
+        "projectile_spawn": [
+          20,
+          -33
+        ],
+        "projectile_count": 3
+      },
+      "projectile": "divine"
+    }
+  },
+  "projectiles": {
+    "arrow": {
+      "file": "sprites/projectile_arrow.png",
+      "frame_size": [
+        16,
+        8
+      ],
+      "frames": 4,
+      "durations_ms": [
+        60,
+        60,
+        60,
+        60
+      ],
+      "pivot": [
+        15,
+        4
+      ],
+      "rotate_to_velocity": true
+    },
+    "divine": {
+      "file": "sprites/projectile_divine.png",
+      "frame_size": [
+        24,
+        12
+      ],
+      "frames": 4,
+      "durations_ms": [
+        60,
+        60,
+        60,
+        60
+      ],
+      "pivot": [
+        22,
+        6
+      ],
+      "rotate_to_velocity": true
+    }
+  },
+  "fx": {
+    "hit": {
+      "file": "sprites/fx_hit.png",
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 6,
+      "durations_ms": [
+        50,
+        60,
+        60,
+        70,
+        80,
+        90
+      ],
+      "pivot": [
+        16,
+        16
+      ]
+    },
+    "hit_divine": {
+      "file": "sprites/fx_hit_divine.png",
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 6,
+      "durations_ms": [
+        50,
+        60,
+        60,
+        70,
+        80,
+        90
+      ],
+      "pivot": [
+        16,
+        16
+      ]
+    }
+  },
+  "ui": {
+    "build": "ui/icon_build.png",
+    "skill": "ui/icon_skill_than_tien.png",
+    "skill_name_vi": "Thần Tiễn Liên Châu"
+  }
+}
